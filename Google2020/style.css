@@ -76,8 +76,9 @@
 footer {
 	background-color: #f2f2f2;
 	height: 50px;
-	display: block;
-	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 footer .rightfooter {
