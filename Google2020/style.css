@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	color: black;
+}
 
 .left {
 	display: flex;
@@ -14,6 +17,11 @@
 	margin: 10px;
 	list-style: none;
 	padding: 10px;
+	color: rgba(0, 0, 0, 0.87);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	cursor: pointer;
 }
 
 .right {
@@ -26,9 +34,18 @@
 }
 
 .right ul li {
+	display: flex;
+	align-items: center;
+	align-content: center;
 	margin: 10px;
 	padding: 10px;
 	list-style: none;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	cursor: pointer;
 }
 .right ul li img {
 	width: 33px;
@@ -37,47 +54,89 @@
 }
 
 .google {
-	height: 90vh;
+	height: 500px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	/* 	align-items: center;
+	justify-content: center; */
 	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .google img {
 	width: 300px;
+	padding: 25px;
 }
 
 .google .search {
-	width: 480px;
+	width: 100%;
 	height: 40px;
-	border-radius: 50px;
-	margin: 25px;
-}
-.google .search:hover {
-	-webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.49);
-	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+
+	background-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	color: rgba(0, 0, 0, 0.87);
+
+	border: none;
+	align-items: center;
+	justify-content: center;
+
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	font-size: 16px;
+	padding: 0px 20px;
 }
 
-.buttons {
+.input {
+	display: flex;
+	align-items: center;
+	border: 1px solid rgb(207, 203, 203);
+	border-radius: 50px;
+	height: 25px;
+	padding: 10px 25px;
+	width: 400px;
+}
+
+.input .yo {
+	margin: 3px;
+	color: rgb(177, 165, 165);
+	cursor: pointer;
+}
+
+.google .search:focus {
+	outline: none;
+}
+.google .input:hover {
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.butons {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-right: 75px;
 }
 
 .buton {
-	margin: 5px;
-	display: inline-block;
+	margin: 10px;
 	padding: 10px;
-	color: grey;
+	color: rgb(59, 57, 57);
 	border: none;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 27px;
+	cursor: pointer;
 }
 
 footer {
 	background-color: #f2f2f2;
 	height: 50px;
-	display: block;
-	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 footer .rightfooter {
